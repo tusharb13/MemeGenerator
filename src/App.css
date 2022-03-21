@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    color: #333;
+    background-image: linear-gradient(to top left, #dc3d24 0%, #201d1e 100%);
+
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    text-align: center;
+    background-image: linear-gradient(
+        to top left,
+        hsla(98, 96%, 50%, 0.788) 0%,
+        #201d1e 100%
+    );
+    color: white;
+    font-size: 30px;
+    margin: auto;
+    height: auto;
+}
+
+.meme-form {
+    text-align: center;
+    padding: 4%;
+}
+
+.input {
+    margin-right: 2%;
+    border-radius: 25px;
+    border: 2px solid #e70e0e;
+    padding: 1px;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+::placeholder {
+    color: black;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #a0d18c;
+    color: #2d9fd9;
+}
+
+.button {
+    border: 1px solid #0066cc;
+    background-color: #cc7a00;
+    color: #ffffff;
+    padding: 5px 10px;
+
+    min-width: 200px;
+    min-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #ffffff;
+    background: red;
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+}
+
+.button:hover {
+    border: 1px solid #0099cc;
+    background-color: #00aacc;
+    color: #ffffff;
+    padding: 5px 10px;
+}
+
+.button:disabled,
+button[disabled] {
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+
+.item {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 600px;
+    min-height: 600px;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.content {
+    text-align: center;
+    position: relative;
+}
+
+.top {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f50404;
+    max-width: 600px;
+    text-overflow: ellipsis;
+    font-size: large;
+    /* Required for text-overflow to do anything */
+    white-space: break-spaces;
+    overflow: hidden;
+}
+
+.bottom {
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f50404;
+    max-width: 600px;
+    text-overflow: ellipsis;
+    font-size: large;
+    /* Required for text-overflow to do anything */
+    white-space: break-spaces;
+    overflow: hidden;
+}
